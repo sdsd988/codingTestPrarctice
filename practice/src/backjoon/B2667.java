@@ -21,7 +21,7 @@ public class B2667 {
         counterDanji++;
         for (int i = 0; i < 4; i++) {
             int newX = x + dirX[i];
-            int newY = x + dirY[i];
+            int newY = y + dirY[i];
             if (!visited[newX][newY] && graph[newX][newY])
                 dfs(newX, newY);
         }
